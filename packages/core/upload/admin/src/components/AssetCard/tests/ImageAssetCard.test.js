@@ -31,7 +31,7 @@ describe('ImageAssetCard', () => {
     );
 
     expect(container).toMatchInlineSnapshot(`
-      .c23 {
+      .c22 {
         border: 0;
         -webkit-clip: rect(0 0 0 0);
         clip: rect(0 0 0 0);
@@ -43,7 +43,7 @@ describe('ImageAssetCard', () => {
         width: 1px;
       }
 
-      .c14 {
+      .c13 {
         padding-top: 4px;
       }
 
@@ -53,14 +53,14 @@ describe('ImageAssetCard', () => {
         box-shadow: 0px 1px 4px rgba(33,33,52,0.1);
       }
 
-      .c11 {
+      .c10 {
         padding-top: 8px;
         padding-right: 12px;
         padding-bottom: 8px;
         padding-left: 12px;
       }
 
-      .c19 {
+      .c18 {
         background: #f6f6f9;
         padding: 4px;
         border-radius: 4px;
@@ -97,7 +97,7 @@ describe('ImageAssetCard', () => {
         align-items: center;
       }
 
-      .c12 {
+      .c11 {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -111,7 +111,7 @@ describe('ImageAssetCard', () => {
         align-items: flex-start;
       }
 
-      .c20 {
+      .c19 {
         display: -webkit-inline-box;
         display: -webkit-inline-flex;
         display: -ms-inline-flexbox;
@@ -129,14 +129,14 @@ describe('ImageAssetCard', () => {
         align-items: center;
       }
 
-      .c10 {
+      .c9 {
         margin: 0;
         padding: 0;
         max-height: 100%;
         max-width: 100%;
       }
 
-      .c9 {
+      .c8 {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -150,20 +150,20 @@ describe('ImageAssetCard', () => {
         background: repeating-conic-gradient(#f6f6f9 0% 25%,transparent 0% 50%) 50% / 20px 20px;
       }
 
-      .c15 {
+      .c14 {
         font-weight: 600;
         color: #32324d;
         font-size: 0.75rem;
         line-height: 1.33;
       }
 
-      .c16 {
+      .c15 {
         color: #666687;
         font-size: 0.75rem;
         line-height: 1.33;
       }
 
-      .c22 {
+      .c21 {
         color: #666687;
         font-weight: 600;
         font-size: 0.6875rem;
@@ -171,14 +171,14 @@ describe('ImageAssetCard', () => {
         text-transform: uppercase;
       }
 
-      .c18 {
+      .c17 {
         margin-left: auto;
         -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
         flex-shrink: 0;
       }
 
-      .c21 {
+      .c20 {
         margin-left: 4px;
       }
 
@@ -250,7 +250,7 @@ describe('ImageAssetCard', () => {
         background-color: #8e8ea9;
       }
 
-      .c13 {
+      .c12 {
         word-break: break-all;
       }
 
@@ -259,7 +259,7 @@ describe('ImageAssetCard', () => {
         border-bottom: 1px solid #eaeaef;
       }
 
-      .c7 {
+      .c6 {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -273,21 +273,21 @@ describe('ImageAssetCard', () => {
         outline: none;
       }
 
-      .c7 svg {
+      .c6 svg {
         height: 12px;
         width: 12px;
       }
 
-      .c7 svg > g,
-      .c7 svg path {
+      .c6 svg > g,
+      .c6 svg path {
         fill: #ffffff;
       }
 
-      .c7[aria-disabled='true'] {
+      .c6[aria-disabled='true'] {
         pointer-events: none;
       }
 
-      .c7:after {
+      .c6:after {
         -webkit-transition-property: all;
         transition-property: all;
         -webkit-transition-duration: 0.2s;
@@ -302,11 +302,11 @@ describe('ImageAssetCard', () => {
         border: 2px solid transparent;
       }
 
-      .c7:focus-visible {
+      .c6:focus-visible {
         outline: none;
       }
 
-      .c7:focus-visible:after {
+      .c6:focus-visible:after {
         border-radius: 8px;
         content: '';
         position: absolute;
@@ -317,7 +317,7 @@ describe('ImageAssetCard', () => {
         border: 2px solid #4945ff;
       }
 
-      .c8 {
+      .c7 {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -334,42 +334,31 @@ describe('ImageAssetCard', () => {
         width: 2rem;
       }
 
-      .c8 svg > g,
-      .c8 svg path {
+      .c7 svg > g,
+      .c7 svg path {
         fill: #8e8ea9;
       }
 
-      .c8:hover svg > g,
-      .c8:hover svg path {
+      .c7:hover svg > g,
+      .c7:hover svg path {
         fill: #666687;
       }
 
-      .c8:active svg > g,
-      .c8:active svg path {
+      .c7:active svg > g,
+      .c7:active svg path {
         fill: #a5a5ba;
       }
 
-      .c8[aria-disabled='true'] {
+      .c7[aria-disabled='true'] {
         background-color: #eaeaef;
       }
 
-      .c8[aria-disabled='true'] svg path {
+      .c7[aria-disabled='true'] svg path {
         fill: #666687;
       }
 
-      .c17 {
+      .c16 {
         text-transform: uppercase;
-      }
-
-      .c6 {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-      }
-
-      .c6 > * + * {
-        margin-left: 8px;
       }
 
       <div>
@@ -391,13 +380,13 @@ describe('ImageAssetCard', () => {
               />
             </div>
             <div
-              class="c5 c6"
+              class="c5"
             >
               <span>
                 <button
                   aria-disabled="false"
                   aria-labelledby="tooltip-1"
-                  class="c7 c8"
+                  class="c6 c7"
                   tabindex="0"
                   type="button"
                 >
@@ -419,39 +408,39 @@ describe('ImageAssetCard', () => {
               </span>
             </div>
             <div
-              class="c9"
+              class="c8"
             >
               <img
                 aria-hidden="true"
-                class="c10"
+                class="c9"
                 src="http://somewhere.com/hello.png?width=40&height=40"
               />
             </div>
           </div>
           <div
-            class="c11"
+            class="c10"
           >
             <div
-              class="c12"
+              class="c11"
             >
               <div
-                class="c13"
+                class="c12"
               >
                 <div
-                  class="c14"
+                  class="c13"
                 >
                   <h2
-                    class="c15"
+                    class="c14"
                     id="card-1-title"
                   >
                     hello.png
                   </h2>
                 </div>
                 <div
-                  class="c16"
+                  class="c15"
                 >
                   <span
-                    class="c17"
+                    class="c16"
                   >
                     png
                   </span>
@@ -459,13 +448,13 @@ describe('ImageAssetCard', () => {
                 </div>
               </div>
               <div
-                class="c18"
+                class="c17"
               >
                 <div
-                  class="c19 c20 c21"
+                  class="c18 c19 c20"
                 >
                   <span
-                    class="c22"
+                    class="c21"
                   >
                     Image
                   </span>
@@ -475,7 +464,7 @@ describe('ImageAssetCard', () => {
           </div>
         </article>
         <div
-          class="c23"
+          class="c22"
         >
           <p
             aria-live="polite"
