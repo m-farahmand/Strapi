@@ -1,5 +1,5 @@
+import { translatedErrors } from '@strapi/strapi/admin';
 import * as yup from 'yup';
-import { translatedErrors } from '@strapi/helper-plugin';
 
 import { getTrad } from '../../../utils';
 
@@ -23,9 +23,6 @@ const keyLabel = { id: getTrad('PopUpForm.Providers.key.label'), defaultMessage:
 const hintLabel = {
   id: getTrad('PopUpForm.Providers.redirectURL.label'),
   defaultMessage: 'The redirect URL to add in your {provider} application configurations',
-  values: {
-    provider: 'VK',
-  },
 };
 const textPlaceholder = {
   id: getTrad('PopUpForm.Providers.key.placeholder'),
@@ -55,7 +52,7 @@ const forms = {
       ],
     ],
     schema: yup.object().shape({
-      enabled: yup.bool().required(translatedErrors.required),
+      enabled: yup.bool().required(translatedErrors.required.id),
     }),
   },
   providers: {
@@ -120,20 +117,20 @@ const forms = {
       ],
     ],
     schema: yup.object().shape({
-      enabled: yup.bool().required(translatedErrors.required),
+      enabled: yup.bool().required(translatedErrors.required.id),
       key: yup.string().when('enabled', {
         is: true,
-        then: yup.string().required(translatedErrors.required),
+        then: yup.string().required(translatedErrors.required.id),
         otherwise: yup.string(),
       }),
       secret: yup.string().when('enabled', {
         is: true,
-        then: yup.string().required(translatedErrors.required),
+        then: yup.string().required(translatedErrors.required.id),
         otherwise: yup.string(),
       }),
       callback: yup.string().when('enabled', {
         is: true,
-        then: yup.string().required(translatedErrors.required),
+        then: yup.string().required(translatedErrors.required.id),
         otherwise: yup.string(),
       }),
     }),
@@ -173,6 +170,21 @@ const forms = {
           size: 12,
           validations: {
             required: true,
+          },
+        },
+      ],
+      [
+        {
+          intlLabel: {
+            id: getTrad({ id: 'PopUpForm.Providers.jwksurl.label' }),
+            defaultMessage: 'JWKS URL',
+          },
+          name: 'jwksurl',
+          type: 'text',
+          placeholder: textPlaceholder,
+          size: 12,
+          validations: {
+            required: false,
           },
         },
       ],
@@ -219,25 +231,25 @@ const forms = {
       ],
     ],
     schema: yup.object().shape({
-      enabled: yup.bool().required(translatedErrors.required),
+      enabled: yup.bool().required(translatedErrors.required.id),
       key: yup.string().when('enabled', {
         is: true,
-        then: yup.string().required(translatedErrors.required),
+        then: yup.string().required(translatedErrors.required.id),
         otherwise: yup.string(),
       }),
       secret: yup.string().when('enabled', {
         is: true,
-        then: yup.string().required(translatedErrors.required),
+        then: yup.string().required(translatedErrors.required.id),
         otherwise: yup.string(),
       }),
       subdomain: yup.string().when('enabled', {
         is: true,
-        then: yup.string().required(translatedErrors.required),
+        then: yup.string().required(translatedErrors.required.id),
         otherwise: yup.string(),
       }),
       callback: yup.string().when('enabled', {
         is: true,
-        then: yup.string().required(translatedErrors.required),
+        then: yup.string().required(translatedErrors.required.id),
         otherwise: yup.string(),
       }),
     }),

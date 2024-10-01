@@ -13,10 +13,26 @@ https://guides.github.com/features/mastering-markdown/
 
 Please ensure you have also read and understand the contributing guide.
 
-https://github.com/strapi/strapi/blob/master/CONTRIBUTING.md#reporting-an-issue
+https://github.com/strapi/strapi/blob/main/CONTRIBUTING.md#reporting-an-issue
 -->
 
 ## Bug report
+
+### Required System information
+
+<!-- Please ensure you are using the Node LTS version (v18 or v20) -->
+<!-- Strapi v3 is no longer supported, please update to Strapi v4 -->
+<!-- If you are reporting a frontend bug please provide error logs after setting STRAPI_ENFORCE_SOURCEMAPS=true in your .env -->
+<!-- This environment variable makes frontend errors easier to read and trace -->
+
+- Node.js version:
+- NPM version:
+- Strapi version:
+- Database:
+- Operating system:
+- Is your project Javascript or Typescript:
+
+<!-- Did you know you can run `yarn strapi report` or `npm run strapi report` to get this information easier? -->
 
 ### Describe the bug
 
@@ -40,14 +56,6 @@ If applicable, add screenshots to help explain your problem.
 ### Code snippets
 
 If applicable, add code samples to help explain your problem.
-
-### System
-
-- Node.js version: <!-- Please ensure you are using the Node LTS version (v12, v14, v16) -->
-- NPM version:
-- Strapi version: <!-- v3 is not supported unless it is a critical/high security issue -->
-- Database:
-- Operating system:
 
 ### Additional context
 

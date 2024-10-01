@@ -1,5 +1,6 @@
+import { useEffect, useRef, useState } from 'react';
+
 import Cropper from 'cropperjs';
-import { useRef, useEffect, useState } from 'react';
 
 const QUALITY = 1;
 
@@ -23,7 +24,7 @@ export const useCropImg = () => {
     setSize({ width: roundedDataWidth, height: roundedDataHeight });
   };
 
-  const crop = image => {
+  const crop = (image) => {
     if (!cropperRef.current) {
       cropperRef.current = new Cropper(image, {
         modal: true,
@@ -50,27 +51,27 @@ export const useCropImg = () => {
   const produceFile = (name, mimeType, lastModifiedDate) =>
     new Promise((resolve, reject) => {
       if (!cropperRef.current) {
-        return reject(
+        reject(
           new Error(
-            'The cropper has not been instanciated: make sure to call the crop() function before calling produceFile().'
+            'The cropper has not been instantiated: make sure to call the crop() function before calling produceFile().'
           )
         );
+      } else {
+        const canvas = cropperRef.current.getCroppedCanvas();
+
+        canvas.toBlob(
+          (blob) => {
+            resolve(
+              new File([blob], name, {
+                type: mimeType,
+                lastModifiedDate,
+              })
+            );
+          },
+          mimeType,
+          QUALITY
+        );
       }
-
-      const canvas = cropperRef.current.getCroppedCanvas();
-
-      return canvas.toBlob(
-        blob => {
-          resolve(
-            new File([blob], name, {
-              type: mimeType,
-              lastModifiedDate,
-            })
-          );
-        },
-        mimeType,
-        QUALITY
-      );
     });
 
   return {

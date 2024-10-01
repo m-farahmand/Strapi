@@ -9,8 +9,8 @@
     "name": "Category"
   },
   "options": {
-    "draftAndPublish": true,
-    "comment": ""
+    "reviewWorkflows": true,
+    "draftAndPublish": true
   },
   "pluginOptions": {
     "i18n": {
@@ -41,7 +41,7 @@
     "datetime": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "type": "datetime"
@@ -53,6 +53,18 @@
         }
       },
       "type": "date"
+    },
+    "relation_locales": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::relation-locale.relation-locale",
+      "mappedBy": "categories"
+    },
+    "relation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::relation-locale.relation-locale",
+      "mappedBy": "category"
     }
   }
 }
